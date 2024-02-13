@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #22d3ee;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  width: 80%;  
+  margin: 2rem auto;
+}
+
+.heading, .message, .q2 {
+  font-family: 'Pacifico', cursive; 
+  color: #2c3e50; 
+}
+
+.heading {
+  font-size: 2.5rem; 
+  margin-bottom: 0.1rem; 
+}
+
+.message {
+  font-size: 1.5rem; 
+  margin-bottom: 0.1rem; 
+}
+
+.q2 {
+  font-size: 2rem;
+  font-weight: bold; 
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.image-1,
+.image-2 {
+  width: 175px;
+}
+
+.image-2 {
+  width: 250px;
+}
+
+.btn {
+  position: absolute;
+  top: calc(100% - 5rem);
+  min-width: 120px;
+  margin-top: 28rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background-color: #f8fafc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e2e8f0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes {
+  left: 50%;
+  transform: translateX(calc(-100% - 1rem));
+  z-index: 1;
+}
+
+.btn-no {
+  left: calc(50% + 1rem);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 1rem;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+
+  .q2 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    position: absolute;
+    top: calc(100% - 5rem);
+    min-width: 120px;
+    margin-top: 28rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e2e8f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-yes {
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem));
+    z-index: 1;
+    top: 37%;
+  }
+  
+  .btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+    top: 37%;
+  }
+}
